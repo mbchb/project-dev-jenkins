@@ -1,0 +1,21 @@
+.elementor-2134 .elementor-element.elementor-element-5c1cb7d8 .elementor-social-icon i {
+    color: #474747;
+}
+
+.col_social_links a i {
+    font-size: 25px;
+}
+.elementor-social-icon i {
+    color: var(--e-social-icon-icon-color);
+}
+.elementor-icon i, .elementor-icon svg {
+    width: 1em;
+    height: 1em;
+    position: relative;
+    display: block;
+    z-index: 10000 !important;
+}
+.fab {
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400;
+}

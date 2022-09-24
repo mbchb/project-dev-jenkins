@@ -1,0 +1,52 @@
+pipeline {
+    agent {label 'Slave2'}
+
+
+    stages {
+
+       	stage('Git') {
+            steps {
+                cleanWs()
+                checkout scm
+            }
+        }
+
+    	stage('Display tools versions') {
+	    	steps {
+	    		echo 'Yarn version on jenkins machine :'
+				sh 'yarn -version'
+				echo 'Node on jenkins machine :'
+				sh 'node --version'
+				echo 'Nginx check on the target server : '
+		    }
+	    }
+
+
+    	stage('Install dependencies from yarn.lock') {
+    		steps{
+
+				sh 'yarn install --frozen-lockfile'
+    		}
+	    }
+
+        stage('Build') {
+    		steps{
+
+
+				sh 'node --max_old_space_size=8192 ./node_modules/@angular/cli/bin/ng build --configuration=production'
+    		}
+	    }
+   stage('Copy dist files') {
+    		steps{
+        sh 'sudo mount /home/ubuntu/site-rhis/'
+        sh 'rm -rf /home/ubuntu/site-rhis/*'
+				sh 'mv ./dist/rhisfinal1/* /home/ubuntu/site-rhis/'
+        sh 'sudo umount /home/ubuntu/site-rhis/'
+
+    		}
+	    }
+
+	    }
+	    }
+
+

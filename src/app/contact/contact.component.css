@@ -1,0 +1,76 @@
+.elementor-1923 .elementor-element.elementor-element-287a901:not(.elementor-motion-effects-element-type-background), .elementor-1923 .elementor-element.elementor-element-287a901 > .elementor-motion-effects-container > .elementor-motion-effects-layer {
+    background-image: url(src/assets/wp-content/uploads/2021/08/visuel-contact.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.elementor-1923 .elementor-element.elementor-element-287a901 {
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+}
+@media (max-width: 767px){
+.section_visuel_contact {
+    padding-top: 200px;
+    padding-bottom: 190px;
+}}
+
+
+@media (max-width: 767px){
+.section_form_contact .col_form .form_contact > div {
+    padding: 30px !important;
+}}
+@media (max-width: 1365px){
+.section_form_contact .col_form .form_contact > div {
+    padding: 40px 50px 35px !important;
+}}
+
+.section_form_contact .col_form .form_contact > div {
+    background-color: #b0b0b0 !important;
+    box-shadow: -1px 0px 24px 0px rgb(0 0 0 / 30%);
+    padding: 40px 65px 35px !important;
+    width: 100%;
+    border-radius:30px;
+}
+
+
+.elementor-1923 .elementor-element.elementor-element-456e0ff .raven-field {
+    background-color: #E3E3FB;
+    border-style: solid;
+    border-width: 0px 0px 0px 0px;
+    border-radius: 9px 9px 9px 9px;
+}
+
+.section_form_contact .col_form .form_contact .raven-field-group .raven-field {
+    background-color: #efefef;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 15px;
+}
+
+.elementor-1923 .elementor-element.elementor-element-456e0ff .raven-field-label {
+    color: #FFFFFF;
+    font-family: "Poppins", Sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+@media (max-width: 767px){
+.section_form_contact .col_form .form_contact .raven-submit-button {
+    padding: 7px 30px 5px 30px !important;
+}
+}
+.section_form_contact .col_form .form_contact .raven-submit-button {
+    padding: 7px 99px 5px 102px !important;
+    border-radius: 15px !important;
+    height: auto !important;
+    width: auto !important;
+    border: none !important;
+}
+.elementor-1923 .elementor-element.elementor-element-456e0ff .raven-submit-button {
+    width: 100%;
+    height: 28px;
+    margin: 0px 6px 0px 0px;
+    background-color: #FF963F;
+    background-image: none;
+    border-style: solid;
+}

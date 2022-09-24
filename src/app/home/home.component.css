@@ -1,0 +1,33 @@
+
+.elementor-2881 .elementor-element.elementor-element-6bede31 .raven-nav-menu-main .raven-nav-menu > li > a.raven-menu-item {
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+.raven-nav-menu li.menu-item>a.raven-link-item.has-submenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+}
+
+
+.elementor-2881 .elementor-element.elementor-element-26676d8 .elementor-heading-title {
+    color: #3D3D3D;
+    font-size: 100px;
+    font-weight: bold;
+}
+
+.elementor-heading-title {
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+}
+.elementor *, .elementor :after, .elementor :before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+@media (max-width: 575.98px){
+h2, .h2 {
+}}
+

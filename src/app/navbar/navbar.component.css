@@ -1,0 +1,33 @@
+mat-nav-list.list-horizontal {
+    padding: 0;
+    padding-left: 5%;
+  }
+
+  mat-nav-list.list-horizontal .mat-list-item {
+    display: inline-block;
+    height: auto;
+    width: auto;
+    font-weight: inherit;
+    font-size: 15px;
+    margin-right: 30px;
+  }
+
+  .elementor-widget-container {
+    padding-left: 2%;
+  }
+
+  .style-toolbar {
+    position: fixed; top: 0;min-height: 73px;
+    background-color: white;
+    color: white;
+    z-index: 1002;
+    -webkit-box-shadow: 0px 0px 47px -27px grey;
+  }
+
+  mat-list-item:active,:hover,:focus{
+    color: #FF9B43 !important;
+  }
+
+  .mat-nav-list .mat-list-item:hover, .mat-nav-list .mat-list-item:focus, .mat-action-list .mat-list-item:hover, .mat-action-list .mat-list-item:focus {
+    background: white;
+}

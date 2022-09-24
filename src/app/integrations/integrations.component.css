@@ -1,0 +1,264 @@
+
+
+:host .section_systeme_caisse .captures_sys_caisse .col {
+    width: 14.212121% !important;
+    margin-right: 4.789833822091887% !important;
+    box-shadow: 0px 0px 0px 0px rgb(0 0 0 / 36%) !important;
+}
+/**********
+*/
+.box-shadow-style {
+    width: 14.212121% !important;
+    margin-right: 4.789833822091887% !important;
+    box-shadow: 0px 0px 0px 0px rgb(0 0 0 / 36%) !important;
+}
+
+.title_section .elementor-heading-title {
+    color: #3d3d3d;
+    font-size: 110px;
+    font-weight: 800;
+    margin-bottom: 12px;
+    font-family: sans-serif;
+}
+
+.elementor-heading-title {
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+}
+
+h1, .h1 {
+    font-family: Poppins;
+}
+
+.elementor *, .elementor :after, .elementor :before {
+    box-sizing: border-box;
+}
+
+.elementor {
+    hyphens: manual;
+}
+
+.elementor-element .elementor-widget-container {
+    transition: background .3s,border .3s,border-radius .3s,box-shadow .3s,-webkit-border-radius .3s,-webkit-box-shadow .3s;
+}
+
+.elementor-widget-wrap>.elementor-element {
+    width: 100%;
+}
+.fadeInUp {
+    animation-name: fadeInUp;
+}
+.title_elt {
+    margin-bottom: 0 !important;
+}
+.animated {
+    animation-duration: 1.25s;
+}
+.elementor-widget {
+    position: relative;
+}
+
+ .style-span {
+    display: block;
+    font-size:42.5px !important;
+    margin-top: 13px;
+    line-height: 1.3em;
+    
+}
+
+.txt_section {
+    font-size: 19.8px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 23px !important;
+    max-width: 400px;
+    line-height: 1.63em;
+}
+.cta button {
+font-weight: 500;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 1em;
+    padding: 8px 55px 5px !important;
+    font-size: 24px !important;
+    background-color: #ff9b42;
+    border-radius: 10px;
+    border-color: #fff;
+
+}
+
+.section_systeme__caisse {
+    z-index: 2;
+    background-color: #385fe3;
+    padding-top: 90px;
+    padding-bottom: 88px;
+    color: #fff;
+}
+
+.style-system-caisse {
+    font-size:42.5px !important;
+    line-height: 1.3em;
+}
+
+ul {
+    text-align: right !important;
+    font-size: 17,5px;
+    line-height: 1.5em;
+    position: relative;
+    list-style: none;
+    padding: 0;
+    font-size: 17.5px;
+    line-height: 1.5em;
+}
+
+.ul_blanc li:before, .ul_noir li:before {
+    display: inline-block;
+    content: '';
+    width: 14px;
+    height: 14px;
+    background-image: url(/assets/img/puce.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    margin-right: 3px;
+    position: relative;
+    top: 3px;
+}
+
+
+
+.ul_noir li:before, .ul_noir li:before {
+    display: inline-block;
+    font-family: Poppins;
+    content: '';
+    width: 14px;
+    height: 14px;
+    background-image: url(/assets/img/puce-noire.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    margin-right: 3px;
+    position: relative;
+    top: 3px;
+    margin-bottom: 0 !important;
+}
+
+li {
+    font-size: 19px;
+    margin-bottom: 30px;
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+
+div.elementor-widget-wrap > div.pastille.pastille {
+    width: 179px;
+    height: 179px;
+    border-radius: 50%;
+    background-color: #ff9b42;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: /*-162px*/-17.64705882352941%;
+    right: /*-63px*/-7.934508816120907%;
+    padding: 10px 24px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16.83px;
+    box-shadow: -1px 0px 24px 0px rgb(0 0 0 / 30%);
+    overflow: hidden;
+    z-index: 2;
+    color: #fff;
+}
+
+.section_logos_clients {
+    background-color: #f7f7f7;
+    padding-top: 80px;
+    padding-bottom: 110px;
+    text-align: center;
+    max-height: 373px;
+}
+
+h2 {
+font-family: sans-serif;
+}
+
+/****
+*/
+
+
+
+.slide-container {
+    width: 100%;
+    height:85vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+   
+}
+
+.image-slider{
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+
+.slides-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 30px;
+}
+
+.img{
+    position: relative;
+    width: 110px;
+    height: 110px;
+    transition: 0.5s;
+}
+
+.button {
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    transition: 0.5s;
+    background-color: rgba(67, 67, 151, 0.2);
+}
+
+#slider-span1:target ~ .image-slider #img1,
+#slider-span1:target ~.image-slider #button-1{
+    width:100px;
+    height: 100px;
+    background-color: transparent;
+}
+#slider-span2:target ~ .image-slider #img2,
+#slider-span2:target ~.image-slider #button-2{
+    width:100px;
+    height: 100px;
+    background-color: transparent;
+}
+#slider-span3:target ~ .image-slider #img3,
+#slider-span3:target ~.image-slider #button-3{
+    width:100px;
+    height: 100px;
+    background-color: transparent;
+}
+
+#slider-span1:target ~.image-slider{
+    left:20%;
+}
+#slider-span2:target ~.image-slider{
+    left:0%;
+}
+#slider-span3:target ~.image-slider{
+    left:-20%;
+}
+
+.elementor-1918 .elementor-element.elementor-element-dc8ae2c:not(.elementor-motion-effects-element-type-background), .elementor-1918 .elementor-element.elementor-element-dc8ae2c > .elementor-motion-effects-container > .elementor-motion-effects-layer {
+    background-image: url(src/assets/wp-content/uploads/2021/08/integrations.jpg);
+}

@@ -1,0 +1,36 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+	<mat-toolbar class="style-toolbar">
+		<img>
+		<div class="elementor-widget-container">
+			<a href="/">
+				<img width="140" height="32" src="assets/wp-content/uploads/2021/08/logo-header-blanc-300x68.png" class="attachment-medium size-medium" alt="Logo My RHIS" loading="lazy" srcset="assets/wp-content/uploads/2021/08/logo-header-blanc-300x68.png 300w, assets/wp-content/uploads/2021/08/logo-header-blanc-300x68.png 420w" sizes="(max-width: 300px) 100vw, 300px"> </a>
+		</div>
+
+		<mat-nav-list class="list-horizontal">
+			<mat-list-item class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true"
+					aria-expanded="false">Fonctionnalités MyRHIS</a>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="/fonctionnalites-myrhis/la-solution" routerLinkActive="active">La solution</a>
+					<a class="dropdown-item" href="/fonctionnalites-myrhis/performances" routerLinkActive="active">Performances</a>
+				</div>
+			</mat-list-item>
+			<mat-list-item>
+				<a  href="/integrations" routerLinkActive="active">Intégrations</a>
+			</mat-list-item>
+			<mat-list-item>
+				<a href="/services" routerLinkActive="active">Nos services</a>
+			</mat-list-item>
+			<mat-list-item>
+				<a href="/#temoignages">Témoignages</a>
+			</mat-list-item>
+			<mat-list-item>
+				<a href="/a-propos" routerLinkActive="active">A propos</a>
+			</mat-list-item>
+			<mat-list-item>
+				<a href="/contact" routerLinkActive="active">Contact</a>
+			</mat-list-item>
+		</mat-nav-list>
+	</mat-toolbar>
+</nav>
+<router-outlet></router-outlet>

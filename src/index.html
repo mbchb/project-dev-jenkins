@@ -1,0 +1,895 @@
+<!doctype html>
+<html lang="fr-FR" data-markup-id="jupiterx_html"><head  data-markup-id="jupiterx_head">	
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+  <title>RHIS solutions – Planification pour la rentabilité des restaurants</title>
+  
+  <base href="./">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="logoRHIS.ico.png">
+<link rel='stylesheet' id='jquery-ui-css'  href='//ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/themes/base/jquery-ui.css' type='text/css' media='all'  crossorigin="anonymous" integrity="sha256-wXYlVH4g+R6DHaBlzBJ6xzsX3yHqV4o6h99rqr9Y1H4=" />
+<link rel='stylesheet' id='jet-menu-hfe-css'  href='assets/wp-content/plugins/jet-menu/integration/plugins/header-footer-elementor/assets/css/style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='layerslider-css'  href='assets/wp-content/plugins/LayerSlider/assets/static/layerslider/css/layerslider.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href='assets/wp-includes/css/dist/block-library/style.min.css' type='text/css' media='all' />
+<link rel="stylesheet" href="src/assets/css/bootstrap.min copy.css">
+<style>
+	@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+</style>
+<style id='wp-block-library-theme-inline-css' type='text/css'>
+.wp-block-audio figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio figcaption{color:hsla(0,0%,100%,.65)}.wp-block-code{border:1px solid #ccc;border-radius:4px;font-family:Menlo,Consolas,monaco,monospace;padding:.8em 1em}.wp-block-embed figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed figcaption{color:hsla(0,0%,100%,.65)}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:hsla(0,0%,100%,.65)}.wp-block-image figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-image figcaption{color:hsla(0,0%,100%,.65)}.wp-block-pullquote{border-top:4px solid;border-bottom:4px solid;margin-bottom:1.75em;color:currentColor}.wp-block-pullquote__citation,.wp-block-pullquote cite,.wp-block-pullquote footer{color:currentColor;text-transform:uppercase;font-size:.8125em;font-style:normal}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;position:relative;font-style:normal}.wp-block-quote.has-text-align-right{border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote.has-text-align-center{border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote.is-style-plain{border:none}.wp-block-search .wp-block-search__label{font-weight:700}:where(.wp-block-group.has-background){padding:1.25em 2.375em}.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table thead{border-bottom:3px solid}.wp-block-table tfoot{border-top:3px solid}.wp-block-table td,.wp-block-table th{padding:.5em;border:1px solid;word-break:normal}.wp-block-table figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video figcaption{color:hsla(0,0%,100%,.65)}.wp-block-template-part.has-background{padding:1.25em 2.375em;margin-top:0;margin-bottom:0}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+</style>
+<link rel='stylesheet' id='eu-cookies-bar-icons-css'  href='assets/wp-content/plugins/eu-cookies-bar/css/eu-cookies-bar-icons.css' type='text/css' media='all' />
+<link rel='stylesheet' id='eu-cookies-bar-style-css'  href='assets/wp-content/plugins/eu-cookies-bar/css/eu-cookies-bar.css' type='text/css' media='all' />
+<style id='eu-cookies-bar-style-inline-css' type='text/css'>
+.eu-cookies-bar-cookies-bar-wrap{font-size:14px;color:#ffffff;background:rgba(0,0,0,0.7);}.eu-cookies-bar-cookies-bar-button-accept{color:#ffffff;background:#0ec50e;}.eu-cookies-bar-cookies-bar-button-decline{color:#ffffff;background:#ff6666;}.eu-cookies-bar-cookies-bar-settings-header{color:#ffffff;background:#249fd0;}.eu-cookies-bar-cookies-bar-settings-save-button{color:#ffffff;background:#249fd0;}
+</style>
+<link rel='stylesheet' id='hfe-style-css'  href='assets/wp-content/plugins/header-footer-elementor/assets/css/header-footer-elementor.css' type='text/css' media='all' />
+<link rel='stylesheet' id='jet-elements-css'  href='assets/wp-content/plugins/jet-elements/assets/css/jet-elements.css' type='text/css' media='all' />
+<link rel='stylesheet' id='jet-elements-skin-css'  href='assets/wp-content/plugins/jet-elements/assets/css/jet-elements-skin.css' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-icons-css'  href='assets/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-frontend-css'  href='assets/wp-content/plugins/elementor/assets/css/frontend.min.css' type='text/css' media='all' />
+<style id='elementor-frontend-inline-css' type='text/css'>
+@font-face{font-family:eicons;src:url(assets/wp-content/plugins/elementor/assets/lib/eicons/fonts/Wc3bdf7494db4d.htm);src:url(assets/wp-content/plugins/elementor/assets/lib/eicons/fonts/Wc3bdf7494db4d.htm#iefix) format("embedded-opentype"),url(assets/wp-content/plugins/elementor/assets/lib/eicons/fonts/Wcd6e4a20f023b.htm) format("woff2"),url(assets/wp-content/plugins/elementor/assets/lib/eicons/fonts/Wc71609793f242.htm) format("woff"),url(assets/wp-content/plugins/elementor/assets/lib/eicons/fonts/Wc4eb1acf3db61.htm) format("truetype"),url(assets/wp-content/plugins/elementor/assets/lib/eicons/fonts/Wc38d8ac73e800.htm#eicon) format("svg");font-weight:400;font-style:normal}
+
+
+.raven-field-type-recaptcha_v3{
+  display: block !important;
+  width: 100% !important;
+}
+
+.g-recaptcha{
+  width: 100% !important;
+  margin-bottom: 30px !important;
+}
+
+.testimonials-container{
+	  padding: 20px 10px 20px 10px;
+  background-color: #FFFFFF;
+  border-radius: 20px 20px 20px 20px;
+  box-shadow: 0px 0px 15px 3px rgb(148 146 146 / 50%);
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.testimonials-bloc-container > .elementor-container{
+  position: relative !important;
+  top: 100px !important;
+  z-index: 1 !important;
+}
+
+.elementor-widget-wrap.elementor-element-populated{
+  padding: 0 !important;
+}
+
+.raven-button-text,
+.raven-submit-button{
+  padding: 1px 10px !important;
+  font-size: 17px !important;
+}
+
+.text-testimonial{
+  margin-bottom: 0 !important;
+}
+
+.navbar-rhis {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+html body .rhi-container {
+  max-width: 1550px;
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+}
+.container-integrity .elementor-container {
+  max-width: 100%!important;
+}
+.elementor-container {
+  max-width: 1550px !important;
+}
+.position-initial, .position-initial .elementor-widget-wrap {
+  position: initial !important
+}
+body .elementor-divider {
+  display: none!important;
+}
+body .formulaire-description {
+  margin-left: 150px!important;
+}
+body .subtitle-banner {
+  max-width: 610px;
+  margin: auto;
+}
+@media (min-width: 1024px){
+  
+  body .raven-nav-menu-horizontal>.raven-nav-menu a.raven-link-item {
+	  padding: 10px 15px!important;
+  }
+}
+@media (min-width: 1300px){
+  body .elementor-divider {
+	  display: flex!important;
+  }
+  
+  .testimonials-bloc-container{
+	  height: 340px !important;
+  }
+}
+@media (min-width: 1500px) {
+  .wrapper-rhis-slide .ms-sl-selected {
+  transform: translateZ(0px) rotateY(0.01deg) scale(1.2)!important;
+  transition: transform 0.25s ease;
+  }
+ .wrapper-rhis-slide .ms-container {
+	 overflow: visible!important;
+ }
+ 
+  .testimonials-container{
+		  margin-right: 25px;
+  }
+  body .raven-nav-menu-horizontal>.raven-nav-menu a.raven-link-item {
+	  padding: 10px 25px!important;
+  }
+  body .container-partnaire  .elementor-widget-wrap {
+	  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  }
+}
+.elementor-2134 .elementor-element.elementor-element-2f3dfdb{text-align:left;}.elementor-2134 .elementor-element.elementor-element-2f3dfdb img{width:65%;}.elementor-2134 .elementor-element.elementor-element-71b239c7{color:#FFFFFF;line-height:1.4em;}.elementor-2134 .elementor-element.elementor-element-5c1cb7d8{--grid-template-columns:repeat(0, auto);--icon-size:15px;--grid-column-gap:5px;--grid-row-gap:0px;}.elementor-2134 .elementor-element.elementor-element-5c1cb7d8 .elementor-widget-container{text-align:left;}.elementor-2134 .elementor-element.elementor-element-5c1cb7d8 .elementor-social-icon{background-color:#FFFFFF;}.elementor-2134 .elementor-element.elementor-element-5c1cb7d8 .elementor-social-icon i{color:#474747;}.elementor-2134 .elementor-element.elementor-element-5c1cb7d8 .elementor-social-icon svg{fill:#474747;}.elementor-2134 .elementor-element.elementor-element-37b2b548 .elementor-heading-title{font-size:20px;}.elementor-2134 .elementor-element.elementor-element-59c231ec{color:#FFFFFF;}.elementor-2134 .elementor-element.elementor-element-51efae14 .elementor-heading-title{font-size:20px;}.elementor-2134 .elementor-element.elementor-element-0ce826b{color:#FFFFFF;}.elementor-2134 .elementor-element.elementor-element-42dea7f6 .elementor-heading-title{font-size:20px;}.elementor-2134 .elementor-element.elementor-element-5b305fe8{color:#FFFFFF;}.elementor-2134 .elementor-element.elementor-element-1dad71dc:not(.elementor-motion-effects-element-type-background), .elementor-2134 .elementor-element.elementor-element-1dad71dc > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-color:#484547;}.elementor-2134 .elementor-element.elementor-element-1dad71dc{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;padding:54px 0px 54px 0px;}.elementor-2134 .elementor-element.elementor-element-1dad71dc > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}#jupiterx-main > div > div > section.elementor-section.elementor-top-section.elementor-element.elementor-element-119993a.temoignages.elementor-section-boxed.elementor-section-height-default.elementor-section-height-default > div{
+  position: relative !important;
+  top: 100px !important;
+  z-index: 1 !important;
+}
+
+.raven-field-type-recaptcha_v3{
+  display: block !important;
+  width: 100% !important;
+}
+
+.g-recaptcha{
+  width: 100% !important;
+  margin-bottom: 30px !important;
+}
+
+.testimonials-container{
+	  padding: 20px 10px 20px 10px;
+  background-color: #FFFFFF;
+  border-radius: 20px 20px 20px 20px;
+  box-shadow: 0px 0px 15px 3px rgb(148 146 146 / 50%);
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.testimonials-bloc-container > .elementor-container{
+  position: relative !important;
+  top: 100px !important;
+  z-index: 1 !important;
+}
+
+.elementor-widget-wrap.elementor-element-populated{
+  padding: 0 !important;
+}
+
+.raven-button-text,
+.raven-submit-button{
+  padding: 1px 10px !important;
+  font-size: 17px !important;
+}
+
+.text-testimonial{
+  margin-bottom: 0 !important;
+}
+
+.navbar-rhis {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+html body .rhi-container {
+  max-width: 1550px;
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+}
+.container-integrity .elementor-container {
+  max-width: 100%!important;
+}
+.elementor-container {
+  max-width: 1550px !important;
+}
+.position-initial, .position-initial .elementor-widget-wrap {
+  position: initial !important
+}
+body .elementor-divider {
+  display: none!important;
+}
+body .formulaire-description {
+  margin-left: 150px!important;
+}
+body .subtitle-banner {
+  max-width: 610px;
+  margin: auto;
+}
+@media (min-width: 1024px){
+  
+  body .raven-nav-menu-horizontal>.raven-nav-menu a.raven-link-item {
+	  padding: 10px 15px!important;
+  }
+}
+@media (min-width: 1300px){
+  body .elementor-divider {
+	  display: flex!important;
+  }
+  
+  .testimonials-bloc-container{
+	  height: 340px !important;
+  }
+}
+@media (min-width: 1500px) {
+  .wrapper-rhis-slide .ms-sl-selected {
+  transform: translateZ(0px) rotateY(0.01deg) scale(1.2)!important;
+  transition: transform 0.25s ease;
+  }
+ .wrapper-rhis-slide .ms-container {
+	 overflow: visible!important;
+ }
+ 
+  .testimonials-container{
+		  margin-right: 25px;
+  }
+  body .raven-nav-menu-horizontal>.raven-nav-menu a.raven-link-item {
+	  padding: 10px 25px!important;
+  }
+  body .container-partnaire  .elementor-widget-wrap {
+	  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  }
+}
+</style>
+<link rel='stylesheet' id='font-awesome-css'  href='assets/wp-content/plugins/elementor/assets/lib/font-awesome/css/font-awesome.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='jupiterx-core-raven-frontend-css'  href='assets/wp-content/plugins/jupiterx-core/includes/extensions/raven/assets/css/frontend.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='jet-blog-css'  href='assets/wp-content/plugins/jet-blog/assets/css/jet-blog.css' type='text/css' media='all' />
+<link rel='stylesheet' id='jet-tabs-frontend-css'  href='assets/wp-content/plugins/jet-tabs/assets/css/jet-tabs-frontend.css' type='text/css' media='all' />
+<link rel='stylesheet' id='flatpickr-css'  href='assets/wp-content/plugins/elementor/assets/lib/flatpickr/flatpickr.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='hfe-widgets-style-css'  href='assets/wp-content/plugins/header-footer-elementor/inc/widgets-css/frontend.css' type='text/css' media='all' />
+<link rel='stylesheet' id='google_fonts_roboto-css'  href='https://fonts.googleapis.com/css2?family=Roboto%3Awght%40200%2C300%3B400%3B700&#038;display=swap' type='text/css' media='all'  crossorigin="anonymous" integrity="sha256-6pMueRZG3KVKOHTXY8cKGmbqURvvnycIOstEHEeOKDo=" />
+<link rel='stylesheet' id='google_fonts_opensans-css'  href='https://fonts.googleapis.com/css2?family=Open+Sans%3Awght%40300%3B400%3B700&#038;display=swap' type='text/css' media='all'  crossorigin="anonymous" integrity="sha256-BSiMoOxSYwSa1Bu6kZbus8hH4LhSyQIpe86aKx419l0=" />
+<link rel='stylesheet' id='jupiterx-css'  href='assets/wp-content/uploads/jupiterx/compiler/jupiterx/a514092.css' type='text/css' media='all' />
+<link rel='stylesheet' id='jupiterx-child-css'  href='assets/wp-content/themes/jupiterx-child/assets/css/Wcce33514efb98.css' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-all-css'  href='assets/wp-content/plugins/jet-menu/assets/public/lib/font-awesome/css/all.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-v4-shims-css'  href='assets/wp-content/plugins/jet-menu/assets/public/lib/font-awesome/css/v4-shims.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='jet-menu-public-css'  href='assets/wp-content/plugins/jet-menu/assets/public/css/public.css' type='text/css' media='all' />
+<link rel='stylesheet' id='jet-menu-general-css'  href='assets/wp-content/uploads/jet-menu/jet-menu-general.css' type='text/css' media='all' />
+<link rel='stylesheet' id='jet-popup-frontend-css'  href='assets/wp-content/plugins/jet-popup/assets/css/jet-popup-frontend.css' type='text/css' media='all' />
+<link rel='stylesheet' id='jupiterx-elements-dynamic-styles-css'  href='assets/wp-content/uploads/jupiterx/compiler/jupiterx-elements-dynamic-styles/2b98dc6.css' type='text/css' media='all' />
+<link rel='stylesheet' id='ms-main-css'  href='assets/wp-content/plugins/masterslider/public/assets/css/masterslider.main.css' type='text/css' media='all' />
+<link rel='stylesheet' id='ms-custom-css'  href='assets/wp-content/uploads/masterslider/custom.css' type='text/css' media='all' />
+<link rel='stylesheet' id='google-fonts-1-css'  href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CPoppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto' type='text/css' media='all'  crossorigin="anonymous" integrity="sha256-fQ0F3vYSQGrk89lsb6Y3dY9MPTV6UsaCdbGB3zY0Y+E=" />
+<link rel='stylesheet' id='elementor-icons-shared-0-css'  href='assets/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-icons-fa-solid-css'  href='assets/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-icons-fa-brands-css'  href='assets/wp-content/plugins/elementor/assets/lib/font-awesome/css/brands.min.css' type='text/css' media='all' />
+<script type='text/javascript' src='assets/wp-includes/js/jquery/jquery.min.js' id='jquery-core-js'></script>
+<script type='text/javascript' src='assets/wp-includes/js/jquery/jquery-migrate.min.js' id='jquery-migrate-js'></script>
+<script type='text/javascript' id='layerslider-utils-js-extra'>
+/* <![CDATA[ */
+var LS_Meta = {"v":"6.11.5","fixGSAP":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='assets/wp-content/plugins/LayerSlider/assets/static/layerslider/js/layerslider.utils.js' id='layerslider-utils-js'></script>
+<script type='text/javascript' src='assets/wp-content/plugins/LayerSlider/assets/static/layerslider/js/layerslider.kreaturamedia.jquery.js' id='layerslider-js'></script>
+<script type='text/javascript' src='assets/wp-content/plugins/LayerSlider/assets/static/layerslider/js/layerslider.transitions.js' id='layerslider-transitions-js'></script>
+<script type='text/javascript' src='assets/wp-content/plugins/masterslider/includes/modules/elementor/assets/js/elementor-widgets.js' id='masterslider-elementor-widgets-js'></script>
+<script type='text/javascript' id='eu-cookies-bar-script-js-extra'>
+/* <![CDATA[ */
+var eu_cookies_bar_params = {"cookies_bar_on_close":"none","cookies_bar_on_scroll":"none","cookies_bar_on_page_redirect":"none","block_until_accept":"","strictly_necessary":["wordpress_test_cookie"],"strictly_necessary_family":["wp-settings","wordpress_logged_in","wp_woocommerce_session","woocommerce"],"expire_time":"1675116552","cookiepath":"_default.htm","user_cookies_settings_enable":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='assets/wp-content/plugins/eu-cookies-bar/js/eu-cookies-bar.js' id='eu-cookies-bar-script-js'></script>
+<script type='text/javascript' src='assets/wp-content/themes/jupiterx/lib/admin/assets/lib/webfont/webfont.min.js' id='jupiterx-webfont-js'></script>
+<script type='text/javascript' id='jupiterx-webfont-js-after'>
+WebFont.load({
+			  google: {
+				  families: ['Poppins:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic']
+			  }
+		  });
+</script>
+<script type='text/javascript' src='assets/wp-content/themes/jupiterx/lib/assets/dist/js/utils.min.js' id='jupiterx-utils-js'></script>
+<script type='text/javascript' src='https://cdn.jsdelivr.net/npm/typed.js@latest/lib/typed.min.js' id='typed_js-js' crossorigin="anonymous" integrity="sha256-UVQ5HtHTmtqBT3KY5cd4AvI47pp0gJwIM+q45HD9oLk="></script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+<meta name="generator" content="Powered by LayerSlider 6.11.5 - Multi-Purpose, Responsive, Parallax, Mobile-Friendly Slider Plugin for WordPress." />
+<!-- LayerSlider updates and docs at: https://layerslider.kreaturamedia.com -->
+<link rel="https://api.w.org/" href="wp-json/default.htm" /><link rel="alternate" type="application/json" href="wp-json/wp/v2/pages/2881/default.htm" /><link rel='shortlink' href='default.htm' />
+<link rel="alternate" type="application/json+oembed" href="wp-json/oembed/1.0/Wcb5a9b73f9868.htm" />
+<link rel="alternate" type="text/xml+oembed" href="wp-json/oembed/1.0/Wc20f5b1f1c65c.htm" />
+<!-- HFCM by 99 Robots - Snippet # 1: captcha -->
+
+<!-- /end HFCM by 99 Robots -->
+<script>var ms_grabbing_curosr='assets/wp-content/plugins/masterslider/public/assets/css/common/grabbing.cur',ms_grab_curosr='assets/wp-content/plugins/masterslider/public/assets/css/common/grab.cur';</script>
+<meta name="generator" content="MasterSlider 3.4.7 - Responsive Touch Image Slider" />
+<script language="javascript" type="text/javascript">
+		   var style = document.createElement("style");
+		   style.type = "text/css";
+		   style.id = "antiClickjack";
+		   if ("cssText" in style){
+			 style.cssText = "body{display:none !important;}";
+		   }else{
+			 style.innerHTML = "body{display:none !important;}";
+		  }
+		  document.getElementsByTagName("head")[0].appendChild(style);
+
+		  if (top === self) {
+		   var antiClickjack = document.getElementById("antiClickjack");
+		   antiClickjack.parentNode.removeChild(antiClickjack);
+		  } else {
+		   top.location = self.location;
+		  }
+		</script><style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><link rel="icon" href="assets/wp-content/uploads/2021/06/fav-150x150.png" sizes="32x32" />
+<link rel="icon" href="assets/wp-content/uploads/2021/06/fav.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="assets/wp-content/uploads/2021/06/fav.png" />
+<meta name="msapplication-TileImage" content="assets/wp-content/uploads/2021/06/fav.png" />
+	  <style type="text/css" id="wp-custom-css">
+		  @media screen and (min-width: 1500px) {
+  .elementor-28 .elementor-element.elementor-element-5a06a558 {
+  padding: 11rem 5% 4% 5%!important;
+}
+}
+@media screen and (max-width: 1499px) {
+.elementor-28 .elementor-element.elementor-element-57055c16 > .elementor-widget-container{
+	  margin-right:0!important;
+}
+}
+
+@media screen and (max-width: 1599px) {
+  footer,
+  #sevicesid, #sevicesid-content,
+  #optimisez-id,
+  #works, #works-content {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+  .elementor-28 .elementor-element.elementor-element-5a06a558 {
+  padding: 10rem 5% 4% 5%;
+}
+}
+
+@media screen and (min-width: 1200px)  and (max-width: 1399px) {
+  .elementor-28 .elementor-element.elementor-element-5a06a558 {
+  padding: 13rem 5% 4% 5%!important;
+}
+}
+
+@media screen and (max-width: 962px) {
+  .raven-nav-menu-toggle {
+  position: fixed!important;
+  top: 45px!important;
+  right: 30px!important;
+}
+
+.elementor img {
+  height: auto;
+  max-width: 40%;
+  }
+
+  
+}
+.testimonials-container {
+  display: flex!important;
+  align-items: flex-start!important;
+}
+
+.testimonials-container  h2.elementor-heading-title.elementor-size-default{
+  margin-top:10px;
+}
+
+.blockminheight{min-height:150px;}
+.blockservice1{
+  min-height:100px;
+}
+.elementor-2881 .elementor-element.elementor-element-10e68531 .elementor-social-icon svg {
+  display: none;
+  fill: #FFFFFFB3;
+}
+
+@media screen and (max-width:1400px) {
+.wrapper-rhis-slide {
+  zoom: 60%!important;
+}
+  .section_intro section_intro_about no_flex {
+	  zoom: 60%!important;
+}
+
+}
+
+  .col_loupe .loupe {
+  display: none;
+}
+
+
+body.raven-nav-menu-horizontal>.raven-nav-menu li.menu-item-has-children > a.raven-link-item:after {
+  content: '';
+  width: 11.5px;
+  height: 13px;
+background-image: url(images/fleche-menu_blanc.png)!important;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  position: relative;
+  display: inline-block;
+  margin-left: 7px;
+  top: 4px;
+}
+</style>
+	  
+
+ 
+ <link rel="preconnect" href="https://fonts.gstatic.com">
+ <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+</head>
+<body class="mat-typography">
+  <app-root></app-root>
+
+  <script type='text/javascript'>
+	/* <![CDATA[ */
+	var hasJetBlogPlaylist = 0;
+	/* ]]> */
+	</script>
+				<div class="eu-cookies-bar-cookies-bar-wrap eu-cookies-bar-cookies-bar-position-bottom">
+					<div class="eu-cookies-bar-cookies-bar">
+						<div class="eu-cookies-bar-cookies-bar-message">
+							<div>
+								<span style="font-weight: 400">Nous utilisons des cookies pour vous offrir la meilleure expérience sur notre site. Pour plus de détail, veuillez consulter notre </span><i><span style="font-weight: 400">politique de confidentialité</span></i><span style="font-weight: 400">.</span>							                                <a target="_blank"
+									   href="mentions-legales">Voir plus</a>
+															</div>
+						</div>
+						<div class="eu-cookies-bar-cookies-bar-button-container">
+	
+							<div class="eu-cookies-bar-cookies-bar-button-wrap">
+																<div class="eu-cookies-bar-cookies-bar-button eu-cookies-bar-cookies-bar-button-settings">
+										<span>Paramètres de cookies</span>
+									</div>
+																	<div class="eu-cookies-bar-cookies-bar-button eu-cookies-bar-cookies-bar-button-accept">
+										<span class="eu-cookies-bar-tick">Accepter et continuer</span>
+									</div>
+																	<div class="eu-cookies-bar-cookies-bar-button eu-cookies-bar-cookies-bar-button-decline">
+										<span class="eu-cookies-bar-decline">Rejeter</span>
+									</div>
+															</div>
+	
+						</div>
+					</div>
+				</div>
+							<div class="eu-cookies-bar-cookies-bar-settings-wrap">
+					<div class="eu-cookies-bar-cookies-bar-settings-wrap-container">
+						<div class="eu-cookies-bar-cookies-bar-settings-overlay">
+						</div>
+						<div class="eu-cookies-bar-cookies-bar-settings">
+													<div class="eu-cookies-bar-cookies-bar-settings-header">
+								<span class="eu-cookies-bar-cookies-bar-settings-header-text">Privacy & Cookie policy</span>
+								<span class="eu-cookies-bar-close eu-cookies-bar-cookies-bar-settings-close"></span>
+							</div>
+							<div class="eu-cookies-bar-cookies-bar-settings-nav">
+								<div class="eu-cookies-bar-cookies-bar-settings-privacy eu-cookies-bar-cookies-bar-settings-nav-active">
+									Privacy &amp; Cookies policy                            </div>
+								<div class="eu-cookies-bar-cookies-bar-settings-cookie-list">Cookies list</div>
+							</div>
+							<div class="eu-cookies-bar-cookies-bar-settings-content">
+								<table class="eu-cookies-bar-cookies-bar-settings-content-child eu-cookies-bar-cookies-bar-settings-content-child-inactive">
+									<tbody>
+									<tr>
+										<th>Cookie name</th>
+										<th>Active</th>
+									</tr>
+																	</tbody>
+								</table>
+								<div class="eu-cookies-bar-cookies-bar-settings-policy eu-cookies-bar-cookies-bar-settings-content-child">
+																</div>
+							</div>
+	
+							<span class="eu-cookies-bar-cookies-bar-settings-save-button">Save settings</span>
+	
+												</div>
+					</div>
+				</div>
+								<div class="eu-cookies-bar-cookies-settings-call-container eu-cookies-bar-cookies-settings-call-position-right">
+						<div class="eu-cookies-bar-cookies-settings-call-button eu-cookies-bar-cookies-bar-button-settings">
+							<span>Paramètres de cookies</span>
+						</div>
+					</div>
+										<script type="text/x-template" id="mobile-menu-item-template"><li
+		:id="'jet-menu-item-'+itemDataObject.itemId"
+		:class="itemClasses"
+	>
+		<div
+			class="jet-mobile-menu__item-inner"
+			tabindex="1"
+			:aria-label="itemDataObject.name"
+			v-on:click="itemSubHandler"
+			v-on:keyup.enter="itemSubHandler"
+		>
+			<a
+				:class="itemLinkClasses"
+				:href="itemDataObject.url"
+				:rel="itemDataObject.xfn"
+				:title="itemDataObject.attrTitle"
+				:target="itemDataObject.target"
+			>
+				<div class="jet-menu-item-wrapper">
+					<div
+						class="jet-menu-icon"
+						v-if="isIconVisible"
+						v-html="itemIconHtml"
+					></div>
+					<div class="jet-menu-name">
+						<span
+							class="jet-menu-label"
+							v-html="itemDataObject.name"
+						></span>
+						<small
+							class="jet-menu-desc"
+							v-if="isDescVisible"
+							v-html="itemDataObject.description"
+						></small>
+					</div>
+					<small
+						class="jet-menu-badge"
+						v-if="isBadgeVisible"
+					>
+						<span class="jet-menu-badge__inner">{{ itemDataObject.badgeText }}</span>
+					</small>
+				</div>
+			</a>
+			<span
+				class="jet-dropdown-arrow"
+				v-if="isSub && !templateLoadStatus"
+				v-html="dropdownIconHtml"
+				v-on:click="markerSubHandler"
+			>
+			</span>
+			<div
+				class="jet-mobile-menu__template-loader"
+				v-if="templateLoadStatus"
+			>
+				<svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" width="24px" height="25px" viewBox="0 0 128 128" xml:space="preserve">
+					<g>
+						<linearGradient id="linear-gradient">
+							<stop offset="0%" :stop-color="loaderColor" stop-opacity="0"/>
+							<stop offset="100%" :stop-color="loaderColor" stop-opacity="1"/>
+						</linearGradient>
+					<path d="M63.85 0A63.85 63.85 0 1 1 0 63.85 63.85 63.85 0 0 1 63.85 0zm.65 19.5a44 44 0 1 1-44 44 44 44 0 0 1 44-44z" fill="url(#linear-gradient)" fill-rule="evenodd"/>
+					<animateTransform attributeName="transform" type="rotate" from="0 64 64" to="360 64 64" dur="1080ms" repeatCount="indefinite"></animateTransform>
+					</g>
+				</svg>
+			</div>
+		</div>
+	
+		<transition name="menu-container-expand-animation">
+			<mobile-menu-list
+				v-if="isDropdownLayout && subDropdownVisible"
+				:depth="depth+1"
+				:children-object="itemDataObject.children"
+				:menu-options="menuOptions"
+			></mobile-menu-list>
+		</transition>
+	
+	</li>
+						</script>					<script type="text/x-template" id="mobile-menu-list-template"><div
+		class="jet-mobile-menu__list"
+		role="navigation"
+	>
+		<ul class="jet-mobile-menu__items">
+			<mobile-menu-item
+				v-for="(item, index) in childrenObject"
+				:key="item.id"
+				:item-data-object="item"
+				:depth="depth"
+				:menu-options="menuOptions"
+			></mobile-menu-item>
+		</ul>
+	</div>
+						</script>					<script type="text/x-template" id="mobile-menu-template"><div
+		:class="instanceClass"
+		v-on:keyup.esc="escapeKeyHandler"
+	>
+		<div
+			class="jet-mobile-menu__toggle"
+			ref="toggle"
+			tabindex="1"
+			aria-label="Open/Close Menu"
+			v-on:click="menuToggle"
+			v-on:keyup.enter="menuToggle"
+		>
+			<div
+				class="jet-mobile-menu__template-loader"
+				v-if="toggleLoaderVisible"
+			>
+				<svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" width="24px" height="25px" viewBox="0 0 128 128" xml:space="preserve">
+					<g>
+						<linearGradient id="linear-gradient">
+							<stop offset="0%" :stop-color="loaderColor" stop-opacity="0"/>
+							<stop offset="100%" :stop-color="loaderColor" stop-opacity="1"/>
+						</linearGradient>
+					<path d="M63.85 0A63.85 63.85 0 1 1 0 63.85 63.85 63.85 0 0 1 63.85 0zm.65 19.5a44 44 0 1 1-44 44 44 44 0 0 1 44-44z" fill="url(#linear-gradient)" fill-rule="evenodd"/>
+					<animateTransform attributeName="transform" type="rotate" from="0 64 64" to="360 64 64" dur="1080ms" repeatCount="indefinite"></animateTransform>
+					</g>
+				</svg>
+			</div>
+	
+			<div
+				class="jet-mobile-menu__toggle-icon"
+				v-if="!menuOpen && !toggleLoaderVisible"
+				v-html="toggleClosedIcon"
+			></div>
+			<div
+				class="jet-mobile-menu__toggle-icon"
+				v-if="menuOpen && !toggleLoaderVisible"
+				v-html="toggleOpenedIcon"
+			></div>
+			<span
+				class="jet-mobile-menu__toggle-text"
+				v-if="toggleText"
+				v-html="toggleText"
+			></span>
+	
+		</div>
+	
+		<transition name="cover-animation">
+			<div
+				class="jet-mobile-menu-cover"
+				v-if="menuContainerVisible && coverVisible"
+				v-on:click="closeMenu"
+			></div>
+		</transition>
+	
+		<transition :name="showAnimation">
+			<div
+				class="jet-mobile-menu__container"
+				v-if="menuContainerVisible"
+			>
+				<div
+					class="jet-mobile-menu__container-inner"
+				>
+					<div
+						class="jet-mobile-menu__header-template"
+						v-if="headerTemplateVisible"
+					>
+						<div
+							class="jet-mobile-menu__header-template-content"
+							ref="header-template-content"
+							v-html="headerContent"
+						></div>
+					</div>
+	
+					<div
+						class="jet-mobile-menu__controls"
+					>
+						<div
+							class="jet-mobile-menu__breadcrumbs"
+							v-if="isBreadcrumbs"
+						>
+							<div
+								class="jet-mobile-menu__breadcrumb"
+								v-for="(item, index) in breadcrumbsData"
+								:key="index"
+							>
+								<div
+									class="breadcrumb-label"
+									v-on:click="breadcrumbHandle(index+1)"
+									v-html="item"
+								></div>
+								<div
+									class="breadcrumb-divider"
+									v-html="breadcrumbIcon"
+									v-if="(breadcrumbIcon && index !== breadcrumbsData.length-1)"
+								>
+								</div>
+							</div>
+						</div>
+						<div
+							class="jet-mobile-menu__back"
+							ref="back"
+							tabindex="1"
+							aria-label="Close Menu"
+							v-if="!isBack && isClose"
+							v-html="closeIcon"
+							v-on:click="menuToggle"
+							v-on:keyup.enter="menuToggle"
+						></div>
+						<div
+							class="jet-mobile-menu__back"
+							ref="back"
+							tabindex="1"
+							aria-label="Back to Prev Items"
+							v-if="isBack"
+							v-html="backIcon"
+							v-on:click="goBack"
+							v-on:keyup.enter="goBack"
+						></div>
+					</div>
+	
+					<div
+						class="jet-mobile-menu__before-template"
+						v-if="beforeTemplateVisible"
+					>
+						<div
+							class="jet-mobile-menu__before-template-content"
+							ref="before-template-content"
+							v-html="beforeContent"
+						></div>
+					</div>
+	
+					<div
+						class="jet-mobile-menu__body"
+					>
+						<transition :name="animation">
+							<mobile-menu-list
+								v-if="!templateVisible"
+								:key="depth"
+								:depth="depth"
+								:children-object="itemsList"
+								:menu-options="menuOptions"
+							></mobile-menu-list>
+							<div
+								class="jet-mobile-menu__template"
+								ref="template-content"
+								v-if="templateVisible"
+							>
+								<div
+									class="jet-mobile-menu__template-content"
+									v-html="itemTemplateContent"
+								></div>
+							</div>
+						</transition>
+					</div>
+	
+					<div
+						class="jet-mobile-menu__after-template"
+						v-if="afterTemplateVisible"
+					>
+						<div
+							class="jet-mobile-menu__after-template-content"
+							ref="after-template-content"
+							v-html="afterContent"
+						></div>
+					</div>
+	
+				</div>
+			</div>
+		</transition>
+	</div>
+						</script><link rel='stylesheet' id='e-animations-css'  href='assets/wp-content/plugins/elementor/assets/lib/animations/animations.min.css' type='text/css' media='all' />
+	<script type='text/javascript' src='assets/wp-includes/js/jquery/ui/core.min.js' id='jquery-ui-core-js'></script>
+	<script type='text/javascript' src='assets/wp-includes/js/jquery/ui/tabs.min.js' id='jquery-ui-tabs-js'></script>
+	<script type='text/javascript' src='assets/wp-includes/js/underscore.min.js' id='underscore-js'></script>
+	<script type='text/javascript' src='assets/wp-content/themes/jupiterx/lib/assets/dist/js/frontend.min.js' id='jupiterx-js'></script>
+	<script type='text/javascript' src='assets/wp-content/themes/jupiterx-child/assets/js/Wceae1560262b.htm' id='jupiterx-child-js'></script>
+	<script type='text/javascript' src='assets/wp-content/plugins/jet-menu/assets/public/js/vue.min.js' id='jet-vue-js'></script>
+	<script type='text/javascript' id='jet-menu-public-js-extra'>
+	
+	</script>
+	<script type='text/javascript' src='assets/wp-content/plugins/jet-menu/assets/public/js/jet-menu-public-script.js' id='jet-menu-public-js'></script>
+	<script type='text/javascript' id='jet-menu-public-js-after'>
+	function CxCSSCollector(){"use strict";var t,e=window.CxCollectedCSS;void 0!==e&&((t=document.createElement("style")).setAttribute("title",e.title),t.setAttribute("type",e.type),t.textContent=e.css,document.head.appendChild(t))}CxCSSCollector();
+	</script>
+	<script type='text/javascript' src='assets/wp-content/plugins/jupiterx-core/includes/extensions/raven/assets/lib/smartmenus/jquery.smartmenus.min.js' id='jupiterx-core-raven-smartmenus-js'></script>
+	<script type='text/javascript' src='assets/wp-content/plugins/jupiterx-core/includes/extensions/raven/assets/lib/url-polyfill/url-polyfill.min.js' id='jupiterx-core-raven-url-polyfill-js'></script>
+	<script type='text/javascript' src='assets/wp-content/plugins/masterslider/public/assets/js/jquery.easing.min.js' id='jquery-easing-js'></script>
+	<script type='text/javascript' src='assets/wp-content/plugins/masterslider/public/assets/js/masterslider.min.js' id='masterslider-core-js'></script>
+	<script type='text/javascript' src='assets/wp-content/plugins/jupiterx-core/includes/extensions/raven/assets/lib/parallax-scroll/jquery.parallax-scroll.min.js' id='jupiterx-core-raven-parallax-scroll-js'></script>
+	<script type='text/javascript' src='assets/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js' id='elementor-webpack-runtime-js'></script>
+	<script type='text/javascript' src='assets/wp-content/plugins/elementor/assets/js/frontend-modules.min.js' id='elementor-frontend-modules-js'></script>
+	<script type='text/javascript' src='assets/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js' id='elementor-waypoints-js'></script>
+	<script type='text/javascript' src='assets/wp-content/plugins/elementor/assets/lib/swiper/swiper.min.js' id='swiper-js'></script>
+	<script type='text/javascript' src='assets/wp-content/plugins/elementor/assets/lib/share-link/share-link.min.js' id='share-link-js'></script>
+	<script type='text/javascript' src='assets/wp-content/plugins/elementor/assets/lib/dialog/dialog.min.js' id='elementor-dialog-js'></script>
+	<script type='text/javascript' id='elementor-frontend-js-before'>
+	var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Partager sur Facebook","shareOnTwitter":"Partager sur Twitter","pinIt":"L\u2019\u00e9pingler","download":"T\u00e9l\u00e9charger","downloadImage":"T\u00e9l\u00e9charger une image","fullscreen":"Plein \u00e9cran","zoom":"Zoom","share":"Partager","playVideo":"Lire la vid\u00e9o","previous":"Pr\u00e9c\u00e9dent","next":"Suivant","close":"Fermer"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Grand mobile","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablette","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Grande tablette","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Portable","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"\u00c9cran large","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.4.4","is_static":false,"experimentalFeatures":{"e_dom_optimization":true,"a11y_improvements":true,"e_import_export":true,"landing-pages":true,"elements-color-picker":true,"admin-top-bar":true},"urls":{"assets":"_/_www.rhis-solutions.com/_assets/wp-content/_plugins/_elementor/_assets/_default.htm"},"settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":2881,"title":"rhis%20%E2%80%93%20Solutions","excerpt":"","featuredImage":false}};
+	</script>
+	<script type='text/javascript' src='assets/wp-content/plugins/elementor/assets/js/frontend.min.js' id='elementor-frontend-js'></script>
+	<script type='text/javascript' id='jet-elements-js-extra'>
+	
+	</script>
+	<script type='text/javascript' src='assets/wp-content/plugins/jet-elements/assets/js/jet-elements.min.js' id='jet-elements-js'></script>
+	<script type='text/javascript' src='assets/wp-content/plugins/jet-menu/assets/public/js/jet-menu-widgets-scripts.js' id='jet-menu-widgets-scripts-js'></script>
+	<script type='text/javascript' src='assets/wp-content/plugins/jet-elements/assets/js/lib/anime-js/anime.min.js' id='jet-anime-js-js'></script>
+	<script type='text/javascript' id='jet-popup-frontend-js-extra'>
+	/* <![CDATA[ */
+	var jetPopupData = {"elements_data":{"sections":[],"columns":[],"widgets":[]},"version":"1.5.5","ajax_url":""};
+	/* ]]> */
+	</script>
+	<script type='text/javascript' src='assets/wp-content/plugins/jet-popup/assets/js/jet-popup-frontend.js' id='jet-popup-frontend-js'></script>
+	<script type='text/javascript' id='jet-tabs-frontend-js-extra'>
+	
+	</script>
+	<script type='text/javascript' src='assets/wp-content/plugins/jet-tabs/assets/js/jet-tabs-frontend.min.js' id='jet-tabs-frontend-js'></script>
+	<script type='text/javascript' src='assets/wp-content/plugins/elementor/assets/js/preloaded-modules.min.js' id='preloaded-modules-js'></script>
+	<script type='text/javascript' id='wp-util-js-extra'>
+
+	</script>
+	<script type='text/javascript' src='assets/wp-includes/js/wp-util.min.js' id='wp-util-js'></script>
+	<script type='text/javascript' id='jupiterx-core-raven-frontend-js-extra'>
+
+	var ravenFormsTranslations = {"validation":{"required":"Please fill in this field","invalidEmail":"The value is not a valid email address","invalidPhone":"The value should only consist numbers and phone characters (-, +, (), etc)","invalidNumber":"The value is not a valid number","invalidMaxValue":"Value must be less than or equal to MAX_VALUE","invalidMinValue":"Value must be greater than or equal to MIN_VALUE"}};
+
+	</script>
+	<script type='text/javascript' src='assets/wp-content/plugins/jupiterx-core/includes/extensions/raven/assets/js/frontend.min.js' id='jupiterx-core-raven-frontend-js'></script>
+	<script type='text/javascript' id='jet-blog-js-extra'>
+	
+	</script>
+	<script type='text/javascript' src='assets/wp-content/plugins/jet-blog/assets/js/jet-blog.min.js' id='jet-blog-js'></script>
+	<script type='text/javascript' src='assets/wp-content/plugins/elementor/assets/lib/flatpickr/flatpickr.min.js' id='flatpickr-js'></script>
+	<script type="text/javascript">
+			(function() {
+				document.body.className = document.body.className.replace('no-js','js');
+			}());
+		</script>
+		<script type='text/javascript'>$('.g-recaptcha').insertBefore('.raven-field-type-submit-button'); </script>   
+		<script>
+			function animateValue(obj, start, end, duration) {
+			let startTimestamp = null;
+			const step = (timestamp) => {
+			  if (!startTimestamp) startTimestamp = timestamp;
+			  const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+			  obj.innerHTML = Math.floor(progress * (end - start) + start);
+			  if (progress < 1) {
+				window.requestAnimationFrame(step);
+			  }
+			};
+			window.requestAnimationFrame(step);
+		  }
+		  
+		  const obj1 = document.getElementById("0101");
+		  animateValue(obj1, 0, 700, 5000);
+		  const obj2 = document.getElementById("0202");
+		  animateValue(obj2, 0, 4, 5000);
+		  const obj3 = document.getElementById("0303");
+		  animateValue(obj3, 0, 25000, 5000);
+		  
+		  function typeEffect(element, speed) {
+			  var text = element.innerHTML;
+			  element.innerHTML = "";
+			  
+			  var i = 0;
+			  var timer = setInterval(function() {
+				if (i < text.length) {
+				  element.append(text.charAt(i));
+				  i++;
+				} else {
+				  clearInterval(timer);
+				}
+			  }, speed);
+			}
+			
+			// application
+			var speed = 230;
+			var h1 = document.getElementById('1111');
+			var delay = h1.innerHTML.length * speed + speed;
+			
+			// type affect to header
+			typeEffect(h1, speed);
+		  </script>
+		  
+		  
+</body>
+</html>

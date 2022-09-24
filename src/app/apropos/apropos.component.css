@@ -1,0 +1,12 @@
+.elementor-1925 .elementor-element.elementor-element-167e1bb5:not(.elementor-motion-effects-element-type-background), .elementor-1925 .elementor-element.elementor-element-167e1bb5 > .elementor-motion-effects-container > .elementor-motion-effects-layer {
+    background-image: url(src/assets/wp-content/uploads/2021/09/visuel-a-propos.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+
+    .elementor-1925 .elementor-element.elementor-element-c926f32:not(.elementor-motion-effects-element-type-background), .elementor-1925 .elementor-element.elementor-element-c926f32 > .elementor-motion-effects-container > .elementor-motion-effects-layer {
+        background-image: url(src/assets/wp-content/uploads/2021/09/visuel-equipe-Copie-scaled.jpg);
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
